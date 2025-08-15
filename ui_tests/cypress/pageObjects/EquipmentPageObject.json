@@ -1,0 +1,16 @@
+{
+    "equipmentList": ".overflow-x-auto >table",
+    "equipmentListHeading": "h2",
+    "equipmentTableHeadings": "thead tr th",
+    "statusCount": "main > div >div >p",
+    "headerButtons": "div > button",
+    "equipmentTableContent": "tbody > tr> td",
+    "addEquipmentButton": "header >div >div >div:nth-child(2)>button:nth-child(2)",
+    "equipmentNameInput": "input[id='name']",
+    "statusDropdown": "select[id='status']",
+    "locationInput": "input[id='location']",
+    "saveButton": "button[type='submit']",
+    "historyLink": "tbody td:nth-child(5) button",
+    "historyModal": "div .mt-3",
+    "statusUpdateButton": "tbody td:nth-child(5) select"
+}
