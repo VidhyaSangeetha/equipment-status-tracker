@@ -4,7 +4,8 @@
     "equipmentTableHeadings": "thead tr th",
     "statusCount": "main > div >div >p",
     "headerButtons": "div > button",
-    "equipmentTableContent": "tbody > tr> td",
+    "equipmentTableContent": "tbody > tr > td",
+    "equipmentTableContentRow": "tbody > tr ",
     "addEquipmentButton": "header >div >div >div:nth-child(2)>button:nth-child(2)",
     "equipmentNameInput": "input[id='name']",
     "statusDropdown": "select[id='status']",
@@ -12,5 +13,13 @@
     "saveButton": "button[type='submit']",
     "historyLink": "tbody td:nth-child(5) button",
     "historyModal": "div .mt-3",
+    "historyHeading": ".mt-3 h3",
+    "noHistoryMessage": ".mt-3>div:nth-child(2)>p",
+    "historyContent": ".space-y-3 > div",
+    "historyFromStatus": ".space-y-3 > div >div>div>div>span:nth-child(1)",
+    "historyToStatus": ".space-y-3 > div >div>div>div>span:nth-child(3)",
+    "historyTimestamp": ".space-y-3 > div >div>span",
+    "operatorName": ".space-y-3 > div >div>div>p",
+    "historyCloseButton": ".mt-3>div>button",
     "statusUpdateButton": "tbody td:nth-child(5) select"
 }

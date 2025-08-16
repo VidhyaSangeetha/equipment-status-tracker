@@ -30,15 +30,21 @@ Auth, Detailed Security and Performance Testing
 **Exploratory Session** - to understand features and risks
 **Manual Functional Testing**- Requirement based test cases 
 **Automation**-
-    -**UI**- Cypress with javascript
+   -**UI**- Cypress with javascript
+        - Equipment list loading and display
+        - Equipment adding
+        - Status update functionality
+        - History modal interactions
+        - Error scenarios   
+            
 
-    -**API**-Supertest
+   -**API**- Supertest
         - Happy Path Testing - Valid requests and responses
         - Validation Testing - Invalid data, missing fields, wrong formats
         - Error Scenarios - 400, 404, 500 status codes
         - Data Integrity - Verify response schemas and data consistency
         - Performance - Response time validation
-**Include basic security and performance tests**
+**Include basic performance tests**
 
 ## Environment:
 https://qa-assignment-omega.vercel.app/
@@ -50,10 +56,9 @@ Team: 1 QA engineer
 
 ## Entry/Exit
 **Entry**: App reachable; APIs up.  
-**Exit**: Manual Test Execution Results, Bug Report, UI+API suites executed, Automation test execution reports 
+**Exit**: Manual Test Execution Results, Bug Report, UI+API suites executed, Automation test execution reports , Test Summary Report
 
 ## Risks:
-- Real-time updates may be flaky - introduce proper waits
 - Network variability - allow reasonable timeouts
 
 ## Deliverables: 

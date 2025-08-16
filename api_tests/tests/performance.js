@@ -4,7 +4,7 @@ const go = require('../helpers/commonrequests.js');
 const PERF_MS = process.env.PERF_MS || 1000;
 
 // This test suite is for performance testing of the Equipment API
-describe.only('Equipment API — Performance (simple p95)', function() {
+describe('Equipment API — Performance (simple p95)', function() {
   this.timeout(30000);
 
   async function sample(endpoint, method='get', times=5) {
@@ -27,7 +27,7 @@ describe.only('Equipment API — Performance (simple p95)', function() {
   }
 
   // Performance test for GET /api/equipment
-  it(`p95 GET /api/equipment <= ${PERF_MS} ms`, async () => {
+  it(`PERF_001 p95 GET /api/equipment <= ${PERF_MS} ms`, async () => {
     const d = await sample('/api/equipment', 'get', 6);
     const p = p95(d);
     expect(p).to.be.at.most(Number(PERF_MS));

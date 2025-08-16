@@ -1,0 +1,190 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 3,
+    "pending": 0,
+    "failures": 2,
+    "start": "2025-08-16T11:19:37.235Z",
+    "end": "2025-08-16T11:19:40.945Z",
+    "duration": 3710,
+    "testsRegistered": 5,
+    "passPercent": 60,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "44420f71-7c70-49a0-a817-3ca2a2333b51",
+      "title": "",
+      "fullFile": "cypress/e2e/equipmentTests.cy.js",
+      "file": "cypress/e2e/equipmentTests.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b8ce05b1-9c2e-4b4c-bef8-104eaad9998e",
+          "title": "Equipment Status Tracker Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "UI_001 Equipment list page display",
+              "fullTitle": "Equipment Status Tracker Tests UI_001 Equipment list page display",
+              "timedOut": null,
+              "duration": 664,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "EquipmentPage.verifyEquipmentListPageElements();\nEquipmentPage.verifyEquipmentListContentIsVisible();",
+              "err": {},
+              "uuid": "cf8b8e96-ce49-4c2e-90f4-642bc8825bec",
+              "parentUUID": "b8ce05b1-9c2e-4b4c-bef8-104eaad9998e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "UI_002 Should add new equipment",
+              "fullTitle": "Equipment Status Tracker Tests UI_002 Should add new equipment",
+              "timedOut": null,
+              "duration": 1537,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "EquipmentPage.clickAddEquipment();\nEquipmentPage.verifyAddEquipmentButtonisDisabled();\nEquipmentPage.enterEquipmentName();\nEquipmentPage.selectStatus();\nEquipmentPage.enterLocation();\nEquipmentPage.saveEquipment();\nEquipmentPage.verifyEquipmentVisibility();",
+              "err": {},
+              "uuid": "8e1a4ab5-099d-4b65-ad34-6c8284823951",
+              "parentUUID": "b8ce05b1-9c2e-4b4c-bef8-104eaad9998e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "UI_003 Should update equipment status",
+              "fullTitle": "Equipment Status Tracker Tests UI_003 Should update equipment status",
+              "timedOut": null,
+              "duration": 459,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Expects error in case of current status is 'Under Maintenance' while trying to update\n//Otherwise it updates the current status to new status\nEquipmentPage.updateStatusforAnEquipment();",
+              "err": {},
+              "uuid": "78a4f199-d54d-4b6b-996c-2a22f22e1f00",
+              "parentUUID": "b8ce05b1-9c2e-4b4c-bef8-104eaad9998e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "UI_004 Should open history modal",
+              "fullTitle": "Equipment Status Tracker Tests UI_004 Should open history modal",
+              "timedOut": null,
+              "duration": 503,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "EquipmentPage.openHistoryModal();\nEquipmentPage.verifyHistoryModalContent();",
+              "err": {
+                "message": "Error: BUG: History button not clickable. Current status: Under Maintenance",
+                "estack": "Error: BUG: History button not clickable. Current status: Under Maintenance\n    at Context.eval (webpack://ui_tests/./cypress/page/EquipmentPage.js:64:26)\n    at getRet (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:121066:20)\n    at tryCatcher (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:121077:66)\n    at Context.then (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:121328:21)\n    at wrapped (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:141671:19)\n    at <unknown> (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:147616:15)\n    at tryCatcher (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:1777:23)",
+                "diff": null
+              },
+              "uuid": "e369861a-27ed-49ea-9884-233b8d9da4af",
+              "parentUUID": "b8ce05b1-9c2e-4b4c-bef8-104eaad9998e",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "UI_005 Verify Equipment Status Types",
+              "fullTitle": "Equipment Status Tracker Tests UI_005 Verify Equipment Status Types",
+              "timedOut": null,
+              "duration": 451,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "EquipmentPage.verifyEquipmentStatusTypes();",
+              "err": {
+                "message": "Error: BUG: Status Badge for Idle not in expected color",
+                "estack": "Error: BUG: Status Badge for Idle not in expected color\n    at Context.eval (webpack://ui_tests/./cypress/page/EquipmentPage.js:136:35)\n    at getRet (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:121066:20)\n    at tryCatcher (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise.attempt.Promise.try (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:4285:29)\n    at Context.thenFn (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:121077:66)\n    at Context.then (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:121328:21)\n    at wrapped (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:141671:19)\n    at <unknown> (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:147616:15)\n    at tryCatcher (https://qa-assignment-omega.vercel.app/__cypress/runner/cypress_runner.js:1777:23)",
+                "diff": null
+              },
+              "uuid": "e5b6f680-629d-4e93-98d5-30ff7e9555cf",
+              "parentUUID": "b8ce05b1-9c2e-4b4c-bef8-104eaad9998e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cf8b8e96-ce49-4c2e-90f4-642bc8825bec",
+            "8e1a4ab5-099d-4b65-ad34-6c8284823951",
+            "78a4f199-d54d-4b6b-996c-2a22f22e1f00"
+          ],
+          "failures": [
+            "e369861a-27ed-49ea-9884-233b8d9da4af",
+            "e5b6f680-629d-4e93-98d5-30ff7e9555cf"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 3614,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

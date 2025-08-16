@@ -9,7 +9,6 @@ module.exports = defineConfig({
     json: true
   },
   e2e: {
-    supportFile: false,
     setupNodeEvents(on, config) {},
     baseUrl: 'https://qa-assignment-omega.vercel.app'
   }

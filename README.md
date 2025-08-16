@@ -50,5 +50,9 @@ POM followed in framework
 Reporting using mochawesome
 HTML Reports in - cypress/reports
 
+# NOTE-
+GET /api/equipment gives error 500 sometimes
+
 
 # Test Summary Report
+Test_Summary_Report.docx
